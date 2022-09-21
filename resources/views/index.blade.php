@@ -1,17 +1,17 @@
-@extends('layout')
-
-@section('content')
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>MAP UI</title>
 </head>
+
 <body>
     <header>
         <div class="flex space-between">
@@ -29,10 +29,10 @@
             </div>
             <div class="guidance"><span class="reverse">/</span>都道府県を選択してください/</div>
             <div class="map">
-                <img class="sp" src="./assets/japan-map-sp.png" alt="日本地図">
-                <img class="pc" src="./assets/japan-map-pc.png" alt="日本地図">
+                <img class="sp" src="../assets/japan-map-sp.png" alt="日本地図">
+                <img class="pc" src="../assets/japan-map-pc.png" alt="日本地図">
                 <div class="area_btn area1" data-area="1">Hokkaido</div>
-                    <div class="area1-line"></div>
+                <div class="area1-line"></div>
                 <div class="area_btn area2" data-area="2">Tohoku</div>
                 <div class="area_btn area3" data-area="3">Kanto</div>
                 <div class="area_btn area4" data-area="4">Chubu</div>
@@ -64,7 +64,7 @@
                         <div class="prefecture" data-pref-id="7">福島県</div>
                     </div>
                 </div>
-                
+
                 <div class="pref_list" data-list="3">
                     <div class="area">関東地区 / Kanto Area</div>
                     <div class="grid">
@@ -77,7 +77,7 @@
                         <div class="prefecture" data-pref-id="14">神奈川県</div>
                     </div>
                 </div>
-                
+
                 <div class="pref_list" data-list="4">
                     <div class="area">中部地区 / Chubu Area</div>
                     <div class="grid">
@@ -92,7 +92,7 @@
                         <div class="prefecture" data-pref-id="23">愛知県</div>
                     </div>
                 </div>
-                
+
                 <div class="pref_list" data-list="5">
                     <div class="area">近畿地区 / Kinki Area</div>
                     <div class="grid">
@@ -105,7 +105,7 @@
                         <div class="prefecture" data-pref-id="30">和歌山県</div>
                     </div>
                 </div>
-                
+
                 <div class="pref_list" data-list="6">
                     <div class="area">四国地区 / Shikoku Area</div>
                     <div class="grid">
@@ -125,7 +125,7 @@
                         <div class="prefecture" data-pref-id="35">山口県</div>
                     </div>
                 </div>
-                
+
                 <div class="pref_list" data-list="8">
                     <div class="area">九州・沖縄地区 / Kyusyu Okinawa Area</div>
                     <div class="grid">
@@ -142,9 +142,11 @@
             </div>
         </div>
     </main>
-    </body>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+<script src="../js/index.js"></script>
+
 </html>
-@endsection
